@@ -1,0 +1,57 @@
+@font-face{
+	font-family: 'FreeSans';
+	src: url("/fonts/FreeSans.ttf"), format('ttf');
+}
+
+*
+{
+	font-family: FreeSans, Sans-Serif;
+}
+
+body{
+	background: url('background.jpeg');
+	display: flex;
+	width: 100%;
+}
+
+h2
+{
+	color: #222255;
+}
+
+h1
+{
+	text-align: center;
+	border-bottom: 1px black solid;
+	color: #222255;
+}
+
+img
+{
+	float:right;
+	box-shadow: 5px 5px 6px black;
+}
+
+#blackBorder
+{
+width: 25%;
+height: 98vh;
+border-radius: 10px;
+background-color: black;
+}
+
+#main
+{
+	display: flex;
+}
+
+#info
+{
+	display: flex;
+}
+
+.class teil
+{
+	width: 25%;
+}
+
