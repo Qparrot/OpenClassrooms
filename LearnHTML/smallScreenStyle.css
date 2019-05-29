@@ -12,20 +12,18 @@ body{
 	background: url('background.jpeg');
 	display: flex;
 	width: 100%;
-	margin: 0;
-
 }
 
 h2
 {
-	color: #222255;
+	color: #1E90FF;
 }
 
 h1
 {
 	text-align: center;
 	border-bottom: 1px black solid;
-	color: #222255;
+	color: #4169E1;
 }
 
 img
@@ -36,10 +34,7 @@ img
 
 #blackBorder
 {
-	display: flex;
-border-radius: 10px;
-background-color: black;
-width: 100px;
+	display:none;
 }
 
 #main
@@ -50,6 +45,7 @@ width: 100px;
 #info
 {
 	display: flex;
+	flex-direction: column;
 }
 
 .class teil
