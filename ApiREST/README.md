@@ -20,3 +20,38 @@ To be a RESTful API, the API needs to be:
 A REST API can send JSON, XML, CSV, RSS files.
 
 It exists also SOAP API, for 'simple Object Access Protocol'.
+
+## Example of API
+
+- Github: https://developer.github.com/. 
+- Weather underground: 
+- IBM Speech to Text: https://cloud.ibm.com/
+
+Let's us IBM speech to text to learn about API. Search for "Speech to text".
+Click on "Create" to activate this service. then on "Service Credentials".
+You NEED TO use this Tutorial: https://cloud.ibm.com/docs/services/speech-to-text?topic=speech-to-text-gettingStarted#getting-started-tutorial.
+
+curl -X POST -u "apikey:{apikey}" \
+--header "Content-Type: audio/flac" \
+--data-binary @/home/quentin/Downloads/audio-file.flac \
+"{url}/v1/recognize"
+
+change apikey and {url} {apikey} by the data provided by IBM.
+
+curl -X POST -u "apikey:{apikey} \
+--header "Content-Type: application/json" \
+--data "{\"text":\" The IBM® Text to Speech service provides an Application Programming Interface (API) that uses IBM's speech-synthesis capabilities to convert text to an audio signal. The service provides a Representational State Transfer (REST) interface that lets you synthesize written text into natural-sounding speech in a variety of languages, accents, and voices. The service currently synthesizes text from English, French, German, Italian, Japanese, Spanish, or Brazilian Portuguese into audio spoken in a male or female voice (the service supports only a single gender for some languages).\"}" \
+--output text.wav \
+"{url}/v1/synthesize" 
+
+Use this links: https://cloud.ibm.com/docs/services/text-to-speech?topic=text-to-speech-gettingStarted#getting-started-tutorial
+
+Apikey/couple credentials is the right thing to use: https://medium.com/@MissAmaraKay/watson-services-username-password-vs-api-key-1806698316be
+
+## Ressources
+
+Les ressources sont le coeur de l'api. c'est ce que le client vient chercher et ce aue le serveur renvoie. Les API sont basee sur un systeme d'URI.
+
+
+
+
