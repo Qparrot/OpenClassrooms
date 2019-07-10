@@ -50,7 +50,48 @@ Apikey/couple credentials is the right thing to use: https://medium.com/@MissAma
 
 ## Ressources
 
-Les ressources sont le coeur de l'api. c'est ce que le client vient chercher et ce aue le serveur renvoie. Les API sont basee sur un systeme d'URI.
+Les ressources sont le coeur de l'api. c'est ce que le client vient chercher et ce aue le serveur renvoie. Les API sont basee sur un systeme d'URI(pour Uniform Resource Identifier). A URI is a string of characters that unambiguously identifies a particular resource. It follows a particular hierarchy defined with syntax rules.
+
+You can asks for a set a data: "/users" (it will give you all the users) or a specific data "/users/231" (it will give you the data of the user 231). 
+Users is a first level resource.
+
+## The request structure
+We can have multiple part in a request:
+- The first line includes a VERB(that describes the action to do) a file(that will be taken by the server).
+and the HTTP version.
+	ex: VERB /file_path.html HTTP/X.X
+- the Header can contain the date, the referer, the user agent(the browser), the user language and the cookies
+- The Body: it contains the attributes of the request.
+
+## Main Request VERB
+
+GET : you get the data
+POST: You ask to add a object to the data
+PUT: You ask to add a object at a particular point of the data set.
+DELETE: you delete the data.
+
+## The response
+
+The response is divided into 5 chunks:
+
+
+|| The HTTP VERSION || THE HTTP CODE(404, 200, etc) ||
+|| HEADER ||
+    ...
+|| HEADER ||
+|| BODY(the resources)||
+
+## The HTTP CODE
+
+2XX = success
+3XX = redirection
+4XX = Mistake from the client
+5XX = Mistake from the server  
+
+## External services
+
+Apigee = service to do request api. You often need to be identifies
+Postman = Service to do api request all over the web.
 
 
 
